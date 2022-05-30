@@ -1,0 +1,80 @@
+.landing_container {
+  background-color: $medium;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.img_2 {
+  align-self: flex-start;
+  margin-left: 4%;
+}
+.img_3 {
+  align-self: flex-end;
+  margin-top: 3%;
+}
+.img_4 {
+  align-self: flex-start;
+  margin-top: 3%;
+  margin-left: 4%;
+}
+
+
+
+@media only screen and (max-width: 321px) {
+  @include mobile_1();
+}
+
+@media only screen and (min-width: 321px) and (max-width: 376px) {
+  @include mobile_1();
+  .img_2, .img_4 {
+    margin-left: 3%;
+  }
+}
+@media only screen and (min-width: 376px) and (max-width: 476px) {
+  @include mobile_2();
+  .img_2, .img_4 {
+    margin-left:3%;
+  }
+}
+
+@media only screen and (min-width: 476px) and (max-width: 576px) {
+  @include mobile_3();
+  .img_2, .img_4 {
+    margin-left:3%;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 676px) {
+  @include mobile_3();
+  .img_2, .img_4 {
+    margin-left:3%;
+  }
+}
+@media only screen and (min-width: 676px) and (max-width: 776px) {
+  @include mobile_4();
+  .img_2, .img_4 {
+    margin-left:3%;
+  }
+}
+
+@media only screen and (min-width: 776px) and (max-width: 876px) {
+  @include mobile_4();
+  .img_2, .img_4 {
+    margin-left:3%;
+  }
+}
+@media only screen and (min-width: 876px) and (max-width: 976px) {
+  @include mobile_4();
+  .img_2, .img_4 {
+    margin-left:3%;
+  }
+}
+@media only screen and (min-width: 976px) and (max-width: 1200px) {
+  @include mobile_5();
+  .img_2, .img_4 {
+    margin-left:3%;
+  }
+}
+
